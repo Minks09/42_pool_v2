@@ -1,26 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
+/*   ft_rev_int_tab.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nachebbi <nachebbi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/24 13:02:32 by racinedelar       #+#    #+#             */
-/*   Updated: 2025/06/26 17:30:06 by nachebbi         ###   ########.fr       */
+/*   Created: 2025/06/26 15:42:55 by nachebbi          #+#    #+#             */
+/*   Updated: 2025/06/26 15:43:48 by nachebbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_print_numbers(void)
+void ft_rev_int_tab(int *tab, int size)
 {
-	int	i;
-
-	i = 47;
-	while (i++ < 57)
-		write (1, &i, 1);
+	while (i < size)
 }
-
-// int	main(void){
-// 	ft_print_numbers();
-// }

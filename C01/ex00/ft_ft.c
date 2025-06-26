@@ -1,26 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
+/*   ft_ft.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nachebbi <nachebbi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/24 13:02:32 by racinedelar       #+#    #+#             */
-/*   Updated: 2025/06/26 17:30:06 by nachebbi         ###   ########.fr       */
+/*   Created: 2025/06/26 13:47:06 by nachebbi          #+#    #+#             */
+/*   Updated: 2025/06/26 13:58:51 by nachebbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+// #include<stdio.h>
 
-void	ft_print_numbers(void)
+void	ft_ft(int *nbr)
 {
-	int	i;
-
-	i = 47;
-	while (i++ < 57)
-		write (1, &i, 1);
+	*nbr = 42;
 }
 
-// int	main(void){
-// 	ft_print_numbers();
+// int main(void)
+// {
+// 	int a = 24000000;
+// 	int *nbr = &a;
+// 	ft_ft(nbr);
+// 	printf("%d\n", a);
 // }

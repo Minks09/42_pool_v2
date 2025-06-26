@@ -1,26 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
+/*   ft_ultimate_ft.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nachebbi <nachebbi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/24 13:02:32 by racinedelar       #+#    #+#             */
-/*   Updated: 2025/06/26 17:30:06 by nachebbi         ###   ########.fr       */
+/*   Created: 2025/06/26 13:48:42 by nachebbi          #+#    #+#             */
+/*   Updated: 2025/06/26 14:12:42 by nachebbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+// #include <stdio.h>
 
-void	ft_print_numbers(void)
+void	ft_ultimate_ft(int *********nbr)
 {
-	int	i;
-
-	i = 47;
-	while (i++ < 57)
-		write (1, &i, 1);
+	*********nbr = 42;
 }
 
-// int	main(void){
-// 	ft_print_numbers();
+// int	main(void)
+// {
+// 	int a = 120,
+// 		*b = &a,
+// 		**c = &b,
+// 		***d = &c,
+// 		****e = &d,
+// 		*****f = &e,
+// 		******g = &f,
+// 		*******h = &g,
+// 		********i = &h,
+// 		*********j = &i;
+// 	printf("%d\n", a);
+// 	ft_ultimate_ft(j);
+// 	printf("%d\n", a);
 // }
+// 

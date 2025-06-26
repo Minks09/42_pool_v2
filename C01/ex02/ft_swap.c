@@ -1,26 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
+/*   ft_swap.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nachebbi <nachebbi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/24 13:02:32 by racinedelar       #+#    #+#             */
-/*   Updated: 2025/06/26 17:30:06 by nachebbi         ###   ########.fr       */
+/*   Created: 2025/06/26 14:14:51 by nachebbi          #+#    #+#             */
+/*   Updated: 2025/06/26 14:27:44 by nachebbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include <stdio.h>
 
-void	ft_print_numbers(void)
+void	ft_swap(int *a, int *b)
 {
-	int	i;
+	int	temp;
 
-	i = 47;
-	while (i++ < 57)
-		write (1, &i, 1);
+	temp = *a;
+	*a = *b;
+	*b = temp;
 }
 
-// int	main(void){
-// 	ft_print_numbers();
+// int	main(void)
+// {
+// 	int	a;
+// 	int	b;
+
+// 	a = 20;
+// 	b = 25;
+// 	printf("a : %d\tb : %d\n", a, b);
+// 	ft_swap(&a, &b);
+// 	printf("a : %d\tb : %d\n", a, b);
+// 	return (0);
 // }
+// 

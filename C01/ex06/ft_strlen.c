@@ -1,27 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_reverse_alphabet.c                        :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nachebbi <nachebbi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/24 12:56:49 by racinedelar       #+#    #+#             */
-/*   Updated: 2025/06/26 17:28:52 by nachebbi         ###   ########.fr       */
+/*   Created: 2025/06/26 15:37:38 by nachebbi          #+#    #+#             */
+/*   Updated: 2025/06/26 15:42:22 by nachebbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include<stdio.h>
 
-void	ft_print_reverse_alphabet(void)
+int	ft_strlen(char *str)
 {
 	int	i;
 
-	i = 123;
-	while (i-- > 97)
-		write (1, &i, 1);
+	i = 0;
+	while (str[i] != '\0')
+		i++;
+	return (i);
 }
 
-// int main (void)
+// int main(void)
 // {
-// 	ft_print_reverse_alphabet();
+//     char *test1 = "Hello, world!";
+//     char *test2 = "";
+//     char *test3 = "42";
+    
+//     printf("Test 1 : \"%s\" -> %d\n", test1, ft_strlen(test1));
+//     printf("Test 2 : \"%s\" -> %d\n", test2, ft_strlen(test2));
+//     printf("Test 3 : \"%s\" -> %d\n", test3, ft_strlen(test3));
+//     return 0;
 // }

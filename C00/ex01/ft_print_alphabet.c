@@ -3,24 +3,26 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_alphabet.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: racinedelarbre <racinedelarbre@student.    +#+  +:+       +#+        */
+/*   By: nachebbi <nachebbi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/24 11:27:33 by racinedelar       #+#    #+#             */
-/*   Updated: 2025/06/24 12:55:43 by racinedelar      ###   ########.fr       */
+/*   Updated: 2025/06/26 17:27:27 by nachebbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void ft_print_alphabet(void)
+void	ft_print_alphabet(void)
 {
-	int i = 96;
-	
-	while(i++ < 122)
+	int	i;
+
+	i = 96;
+	while (i++ < 122)
 		write (1, &i, 1);
 }
 
-int main (void)
-{
-	ft_print_alphabet();
-}
+// int	main (void)
+// {
+//	ft_print_alphabet();
+//}
+//

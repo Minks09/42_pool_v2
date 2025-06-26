@@ -1,26 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
+/*   ft_div_mod.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nachebbi <nachebbi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/24 13:02:32 by racinedelar       #+#    #+#             */
-/*   Updated: 2025/06/26 17:30:06 by nachebbi         ###   ########.fr       */
+/*   Created: 2025/06/26 14:28:41 by nachebbi          #+#    #+#             */
+/*   Updated: 2025/06/26 14:33:29 by nachebbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include <stdio.h>
 
-void	ft_print_numbers(void)
+void	ft_div_mod(int a, int b,int *div, int *mod)
 {
-	int	i;
-
-	i = 47;
-	while (i++ < 57)
-		write (1, &i, 1);
+	*div = a / b;
+	*mod = a % b;
 }
 
-// int	main(void){
-// 	ft_print_numbers();
+// int main(void)
+// {
+//     int a = 20;
+//     int b = 6;
+//     int div;
+//     int mod;
+
+//     ft_div_mod(a, b, &div, &mod);
+//     printf("a = %d, b = %d\n", a, b);
+//     printf("Division : %d\nModulo : %d\n", div, mod);
+//     return 0;
 // }
