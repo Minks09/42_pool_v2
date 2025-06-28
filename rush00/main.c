@@ -3,18 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: racinedelarbre <racinedelarbre@student.    +#+  +:+       +#+        */
+/*   By: nachebbi <nachebbi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/28 15:01:55 by nachebbi          #+#    #+#             */
-/*   Updated: 2025/06/28 15:26:18 by racinedelar      ###   ########.fr       */
+/*   Updated: 2025/06/28 16:11:31 by nachebbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-int main(void)
+int	main(void)
 {
-	rush(1, 1);
-	rush(0, 3);
-	
+	rush(5, 5);
+	rush(20, 20);
+	rush(07, 5);
 }
