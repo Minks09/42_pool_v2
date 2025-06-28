@@ -6,13 +6,13 @@
 /*   By: nachebbi <nachebbi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/28 15:01:55 by nachebbi          #+#    #+#             */
-/*   Updated: 2025/06/28 16:11:31 by nachebbi         ###   ########.fr       */
+/*   Updated: 2025/06/28 18:07:14 by nachebbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+void	rush(int x, int y);
+
 int	main(void)
 {
-	rush(5, 5);
-	rush(20, 20);
-	rush(07, 5);
+	rush(2, 5);
 }
