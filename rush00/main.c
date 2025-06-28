@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nachebbi <nachebbi@student.42.fr>          +#+  +:+       +#+        */
+/*   By: racinedelarbre <racinedelarbre@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/28 15:01:55 by nachebbi          #+#    #+#             */
-/*   Updated: 2025/06/28 15:02:50 by nachebbi         ###   ########.fr       */
+/*   Updated: 2025/06/28 15:26:18 by racinedelar      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 int main(void)
 {
-	rush(1, );
+	rush(1, 1);
+	rush(0, 3);
 	
 }
