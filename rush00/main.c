@@ -6,7 +6,7 @@
 /*   By: nachebbi <nachebbi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/28 15:01:55 by nachebbi          #+#    #+#             */
-/*   Updated: 2025/06/28 18:07:14 by nachebbi         ###   ########.fr       */
+/*   Updated: 2025/06/28 18:20:27 by nachebbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@ void	rush(int x, int y);
 
 int	main(void)
 {
-	rush(2, 5);
+	rush(3, 0);
 }

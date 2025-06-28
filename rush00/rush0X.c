@@ -6,7 +6,7 @@
 /*   By: nachebbi <nachebbi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/28 15:26:23 by racinedelar       #+#    #+#             */
-/*   Updated: 2025/06/28 18:10:45 by nachebbi         ###   ########.fr       */
+/*   Updated: 2025/06/28 18:20:05 by nachebbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,6 +90,8 @@ void	rush(int x, int y)
 	int		hauteur_index;
 
 	hauteur_index = 0;
+	if (x <= 0)
+		return ;
 	while (hauteur_index <= y)
 	{
 		if (hauteur_index == 0)
