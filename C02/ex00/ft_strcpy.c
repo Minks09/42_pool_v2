@@ -1,40 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_rev_int_tab.c                                   :+:      :+:    :+:   */
+/*   ft_strcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nachebbi <nachebbi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/26 15:42:55 by nachebbi          #+#    #+#             */
-/*   Updated: 2025/06/27 13:47:51 by nachebbi         ###   ########.fr       */
+/*   Created: 2025/06/26 23:20:53 by nachebbi          #+#    #+#             */
+/*   Updated: 2025/06/26 23:29:10 by nachebbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include <stdio.h>
+#include <string.h>
 
-void	ft_rev_int_tab(int *tab, int size)
+int	ft_strlen(char *str)
 {
 	int	i;
-	int	temp;
 
 	i = 0;
-	while (i < size / 2)
-	{
-		temp = tab[i];
-		tab[i] = tab[size - 1 - i];
-		tab[size - 1 - i] = temp;
+	while (str[i] != '\0')
 		i++;
-	}
+	return (i);
 }
 
-// int	main(void)
-// {
-//     int	tab[] = {12, 98, 65, 35, 1000000, -3};
-//     int	size = 6;
-//     int	i;
+char	*ft_strcpy(char *dest, char *src)
+{
+	int	i;
 
-//     ft_rev_int_tab(tab, size);
-//     for (i = 0; i < size; i++)
-//         printf("%d ", tab[i]);
-//     printf("\n");
-// }
+	i = 0;
+	while ()
+	return (dest);
+}
+
+int main(void)
+{
+	char *dest []
+}
