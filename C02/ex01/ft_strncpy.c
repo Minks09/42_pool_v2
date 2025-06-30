@@ -6,17 +6,20 @@
 /*   By: nachebbi <nachebbi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/29 17:24:42 by nachebbi          #+#    #+#             */
-/*   Updated: 2025/06/29 17:27:41 by nachebbi         ###   ########.fr       */
+/*   Updated: 2025/06/30 17:46:50 by nachebbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_str_is_lowercase(char *str)
+char	*ft_strncpy(char *dest, char *src, unsigned int n)
 {
-	while(str)
+	int	i;
+
+	i = 0;
+	while (i < n)
 	{
-		if (!(str >= 97 && str <= 122))
-			return(0);
-		str++;
+		*dest = *src;
+		src++;
+		dest++;
 	}
-	return(1);
+	dest += '\0';
 }

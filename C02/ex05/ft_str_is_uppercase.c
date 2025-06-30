@@ -1,28 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_str_is_uppercase.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nachebbi <nachebbi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/28 15:01:55 by nachebbi          #+#    #+#             */
-/*   Updated: 2025/06/30 18:02:21 by nachebbi         ###   ########.fr       */
+/*   Created: 2025/06/30 17:42:31 by nachebbi          #+#    #+#             */
+/*   Updated: 2025/06/30 17:51:03 by nachebbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	rush(int x, int y);
-
-int	main(void)
+int	ft_str_is_lowercase(char *str)
 {
-	rush(3, 3);
-	rush(2, 4);
-	// rush(10, -1);
-	// rush(-1, 10);
-	// rush(0,0);
-	// rush(3, 3);
-	// rush(1, 1);
-// 	rush(3, 3);
-// 	rush(3, 2);
-// 	rush(2, 2);
-// 	rush(2, 3);
+	while (str)
+	{
+		if (!(str >= 65 && str <= 90))
+			return (0);
+		str++;
+	}
+	return (1);
 }

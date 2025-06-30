@@ -1,28 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_strlowcase.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nachebbi <nachebbi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/28 15:01:55 by nachebbi          #+#    #+#             */
-/*   Updated: 2025/06/30 18:02:21 by nachebbi         ###   ########.fr       */
+/*   Created: 2025/06/30 19:07:40 by nachebbi          #+#    #+#             */
+/*   Updated: 2025/06/30 19:31:26 by nachebbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	rush(int x, int y);
+
+char	*ft_strcapitalize(char *str)
+{
+	while (*str)
+	{
+		if (!(ft_is_alpha(str) && (str++ >= 97 && str <= 122))
+			*str++ -= 20;
+		str++;
+	}
+	return (str);
+}
 
 int	main(void)
 {
-	rush(3, 3);
-	rush(2, 4);
-	// rush(10, -1);
-	// rush(-1, 10);
-	// rush(0,0);
-	// rush(3, 3);
-	// rush(1, 1);
-// 	rush(3, 3);
-// 	rush(3, 2);
-// 	rush(2, 2);
-// 	rush(2, 3);
+	char	str[] = "bonjour voici une	string '\n'sans majuscule'\n'";
+	ft_strcapitalize(str);
 }

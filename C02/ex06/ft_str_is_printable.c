@@ -1,28 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_str_is_printable.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nachebbi <nachebbi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/28 15:01:55 by nachebbi          #+#    #+#             */
-/*   Updated: 2025/06/30 18:02:21 by nachebbi         ###   ########.fr       */
+/*   Created: 2025/06/30 18:09:37 by nachebbi          #+#    #+#             */
+/*   Updated: 2025/06/30 19:37:02 by nachebbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	rush(int x, int y);
-
-int	main(void)
+int	ft_is_separator(char c)
 {
-	rush(3, 3);
-	rush(2, 4);
-	// rush(10, -1);
-	// rush(-1, 10);
-	// rush(0,0);
-	// rush(3, 3);
-	// rush(1, 1);
-// 	rush(3, 3);
-// 	rush(3, 2);
-// 	rush(2, 2);
-// 	rush(2, 3);
+	if ( c)
+}
+
+int	ft_strcapitalize(char *str)
+{
+	if (!(*str))
+		return (1);
+	while (*str)
+	{
+		if (!(str >= 32 && str <= 126))
+			return (0);
+		str++;
+	}
+	return (1);
 }

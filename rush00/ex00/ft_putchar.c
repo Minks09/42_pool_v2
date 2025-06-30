@@ -6,11 +6,12 @@
 /*   By: nachebbi <nachebbi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/28 15:25:03 by racinedelar       #+#    #+#             */
-/*   Updated: 2025/06/28 17:23:40 by nachebbi         ###   ########.fr       */
+/*   Updated: 2025/06/30 18:05:35 by nachebbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
+
 
 void	ft_putchar(char c)
 {
