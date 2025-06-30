@@ -1,27 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_strncpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nachebbi <nachebbi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/28 15:01:55 by nachebbi          #+#    #+#             */
-/*   Updated: 2025/06/29 22:35:57 by nachebbi         ###   ########.fr       */
+/*   Created: 2025/06/29 17:24:42 by nachebbi          #+#    #+#             */
+/*   Updated: 2025/06/29 17:27:41 by nachebbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	rush(int x, int y);
-
-int	main(void)
+int	ft_str_is_lowercase(char *str)
 {
-	rush(1, 4);
-	// rush(10, -1);
-	// rush(-1, 10);
-	// rush(0,0);
-	// rush(3, 3);
-	// rush(1, 1);
-	rush(3, 3);
-	rush(3, 2);
-	rush(2, 2);
-	rush(2, 3);
+	while(str)
+	{
+		if (!(str >= 97 && str <= 122))
+			return(0);
+		str++;
+	}
+	return(1);
 }
