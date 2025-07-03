@@ -1,37 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nachebbi <nachebbi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/26 23:20:53 by nachebbi          #+#    #+#             */
-/*   Updated: 2025/07/03 19:09:43 by nachebbi         ###   ########.fr       */
+/*   Created: 2025/07/03 14:08:30 by nachebbi          #+#    #+#             */
+/*   Updated: 2025/07/03 19:49:41 by nachebbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-
-int	ft_strlen(char *str)
+int	ft_strncmp(char *s1, char *s2, unsigned int n)
 {
-	int	i;
+	unsigned int	i;
 
 	i = 0;
-	while (str[i] != '\0')
-		i++;
-	return (i);
-}
-
-char	*ft_strcpy(char *dest, char *src)
-{
-	int	i;
-
-	i = 0;
-	while (i < ft_strlen(src))
+	if (n < 1)
+		return (0);
+	while (s1[i] && (s1[i] == s2[i]))
 	{
-		dest[i] = src[i];
-		i++;
+		if (i < (n - 1))
+			i++;
+		else
+			return (0);
 	}
-	dest[i++] = '\0';
-	return (dest);
+	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 }

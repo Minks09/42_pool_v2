@@ -1,37 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_strncat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nachebbi <nachebbi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/26 23:20:53 by nachebbi          #+#    #+#             */
-/*   Updated: 2025/07/03 19:09:43 by nachebbi         ###   ########.fr       */
+/*   Created: 2025/07/03 15:25:57 by nachebbi          #+#    #+#             */
+/*   Updated: 2025/07/03 19:25:36 by nachebbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-
-int	ft_strlen(char *str)
+char	*ft_strncat(char *dest, char *src, unsigned int nb)
 {
-	int	i;
+	unsigned int	i;
+	unsigned int	j;
 
 	i = 0;
-	while (str[i] != '\0')
+	j = 0;
+	while (dest[i] != '\0')
 		i++;
-	return (i);
-}
-
-char	*ft_strcpy(char *dest, char *src)
-{
-	int	i;
-
-	i = 0;
-	while (i < ft_strlen(src))
+	while (src[j] != '\0' && (unsigned int)j < nb)
 	{
-		dest[i] = src[i];
-		i++;
+		dest[i + j] = src[j];
+		j++;
 	}
-	dest[i++] = '\0';
+	dest[i + j] = '\0';
 	return (dest);
 }
