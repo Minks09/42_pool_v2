@@ -1,45 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strstr.c                                        :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nachebbi <nachebbi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/03 15:28:32 by nachebbi          #+#    #+#             */
-/*   Updated: 2025/07/03 20:05:04 by nachebbi         ###   ########.fr       */
+/*   Created: 2025/07/04 00:19:50 by nachebbi          #+#    #+#             */
+/*   Updated: 2025/07/04 00:25:05 by nachebbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strstr(char *str, char *to_find)
-{
-	int	i;
-	int	j;
+#include <unistd.h>
 
-	i = 0;
-	j = 0;
-	if (to_find[j] == '\0')
-		return (str);
-	while (*str != '\0')
-	{
-		j = 0;
-		while (str[i + j] == to_find[j])
-		{
-			if (to_find[j + 1] == '\0')
-				return (&str[i + j]);
-			j++;
-		}
-		i++;
-	}
-	return (0);
+void	ft_putstr(char *str)
+{
+	while (*str)
+		write(1, str++, 1);
 }
 
-while (*str)
-{
-	while(str[i + j] == to_find[j])
-		j++;
-	if (!to_find[j])
-		return (&str[i]);
-	i++;
-	j = 0;
-}
-return (0);
+// int	main(int ac, char *av[])
+// {
+// 	ft_putstr(av[1]);
+// 	return (0);
+// }

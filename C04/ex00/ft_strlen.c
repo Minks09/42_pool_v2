@@ -1,45 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strstr.c                                        :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nachebbi <nachebbi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/03 15:28:32 by nachebbi          #+#    #+#             */
-/*   Updated: 2025/07/03 20:05:04 by nachebbi         ###   ########.fr       */
+/*   Created: 2025/06/26 15:37:38 by nachebbi          #+#    #+#             */
+/*   Updated: 2025/06/29 16:20:31 by nachebbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strstr(char *str, char *to_find)
+#include <stdio.h>
+
+int	ft_strlen(char *str)
 {
 	int	i;
-	int	j;
 
 	i = 0;
-	j = 0;
-	if (to_find[j] == '\0')
-		return (str);
-	while (*str != '\0')
-	{
-		j = 0;
-		while (str[i + j] == to_find[j])
-		{
-			if (to_find[j + 1] == '\0')
-				return (&str[i + j]);
-			j++;
-		}
+	while (str[i] != '\0')
 		i++;
-	}
-	return (0);
+	return (i);
 }
 
-while (*str)
-{
-	while(str[i + j] == to_find[j])
-		j++;
-	if (!to_find[j])
-		return (&str[i]);
-	i++;
-	j = 0;
-}
-return (0);
+// int main(void)
+// {
+//     char *test1 = "Hello, world!";
+//     char *test2 = "";
+//     char *test3 = "42";
+//     printf("Test 1 : \"%s\" -> %d\n", test1, ft_strlen(test1));
+//     printf("Test 2 : \"%s\" -> %d\n", test2, ft_strlen(test2));
+//     printf("Test 3 : \"%s\" -> %d\n", test3, ft_strlen(test3));
+//     return 0;
+// }

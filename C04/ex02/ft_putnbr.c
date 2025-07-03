@@ -1,45 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strstr.c                                        :+:      :+:    :+:   */
+/*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nachebbi <nachebbi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/03 15:28:32 by nachebbi          #+#    #+#             */
-/*   Updated: 2025/07/03 20:05:04 by nachebbi         ###   ########.fr       */
+/*   Created: 2025/07/04 00:26:32 by nachebbi          #+#    #+#             */
+/*   Updated: 2025/07/04 01:07:54 by nachebbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strstr(char *str, char *to_find)
-{
-	int	i;
-	int	j;
+#include <unistd.h>
 
-	i = 0;
-	j = 0;
-	if (to_find[j] == '\0')
-		return (str);
-	while (*str != '\0')
+void	ft_putchar(char c)
+{
+	write(1, &c, 1);
+}
+
+void	ft_putnbr(int nbr)
+{
+	if (nbr == -2147483648)
 	{
-		j = 0;
-		while (str[i + j] == to_find[j])
-		{
-			if (to_find[j + 1] == '\0')
-				return (&str[i + j]);
-			j++;
-		}
-		i++;
+		write (1, "-2147483648", 11);
+		return ;
 	}
-	return (0);
+	if (nbr < 0)
+	{
+		ft_putchar('-');
+		nbr = -nbr;
+	}
+	if (nbr >= 10)
+		ft_putnbr(nbr / 10);
+	ft_putchar(nbr % 10 + '0');
 }
 
-while (*str)
-{
-	while(str[i + j] == to_find[j])
-		j++;
-	if (!to_find[j])
-		return (&str[i]);
-	i++;
-	j = 0;
-}
-return (0);
+// int	main(void)
+// {
+// 	ft_putnbr(4564654);
+// 	ft_putnbr(-2147483648);
+// 	// ft_putnbr(av[2]);
+// 	return(0);
+// }
