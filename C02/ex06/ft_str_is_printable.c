@@ -6,16 +6,11 @@
 /*   By: nachebbi <nachebbi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/30 18:09:37 by nachebbi          #+#    #+#             */
-/*   Updated: 2025/06/30 19:37:02 by nachebbi         ###   ########.fr       */
+/*   Updated: 2025/07/01 15:56:34 by nachebbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_is_separator(char c)
-{
-	if ( c)
-}
-
-int	ft_strcapitalize(char *str)
+int	ft_str_is_printable(char *str)
 {
 	if (!(*str))
 		return (1);
