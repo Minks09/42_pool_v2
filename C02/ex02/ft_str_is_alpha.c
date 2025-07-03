@@ -6,17 +6,21 @@
 /*   By: nachebbi <nachebbi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/30 17:47:03 by nachebbi          #+#    #+#             */
-/*   Updated: 2025/07/01 16:03:22 by nachebbi         ###   ########.fr       */
+/*   Updated: 2025/07/03 16:06:06 by nachebbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_str_is_alpha(char *str)
 {
-	while (str)
+	int	i;
+
+	i = 0;
+	while (str[i])
 	{
-		if (!((str >= 97 && str <= 122) || (str >= 65 && str <= 90)))
+		if (!((str[i] >= 97 && str[i] <= 122)
+				|| (str[i] >= 65 && str[i] <= 90)))
 			return (0);
-		str++;
+		i++;
 	}
 	return (1);
 }

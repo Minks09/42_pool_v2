@@ -6,17 +6,20 @@
 /*   By: nachebbi <nachebbi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/30 17:44:01 by nachebbi          #+#    #+#             */
-/*   Updated: 2025/06/30 17:50:58 by nachebbi         ###   ########.fr       */
+/*   Updated: 2025/07/03 16:49:03 by nachebbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_str_is_lowercase(char *str)
 {
-	while (str)
+	int	i;
+
+	i = 0;
+	while (str[i])
 	{
-		if (!(str >= 97 && str <= 122))
+		if (!(str[i] >= 97 && str[i] <= 122))
 			return (0);
-		str++;
+		i++;
 	}
 	return (1);
 }

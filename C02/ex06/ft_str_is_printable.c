@@ -6,19 +6,22 @@
 /*   By: nachebbi <nachebbi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/30 18:09:37 by nachebbi          #+#    #+#             */
-/*   Updated: 2025/07/01 15:56:34 by nachebbi         ###   ########.fr       */
+/*   Updated: 2025/07/03 16:12:30 by nachebbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_str_is_printable(char *str)
 {
+	int	i;
+
+	i = 0;
 	if (!(*str))
 		return (1);
-	while (*str)
+	while (str[i])
 	{
-		if (!(str >= 32 && str <= 126))
+		if (!(str[i] >= 32 && str[i] <= 126))
 			return (0);
-		str++;
+		i++;
 	}
 	return (1);
 }

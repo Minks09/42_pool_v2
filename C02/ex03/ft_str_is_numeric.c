@@ -6,17 +6,20 @@
 /*   By: nachebbi <nachebbi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/30 17:51:15 by nachebbi          #+#    #+#             */
-/*   Updated: 2025/06/30 18:07:12 by nachebbi         ###   ########.fr       */
+/*   Updated: 2025/07/03 16:06:45 by nachebbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_str_is_numeric(char *str)
 {
-	while (str)
+	int	i;
+
+	i = 0;
+	while (str[i])
 	{
-		if (!((str >= 48 && str <= 57)))
+		if (!((str[i] >= 48 && str[i] <= 57)))
 			return (0);
-		str++;
+		i++;
 	}
 	return (1);
 }

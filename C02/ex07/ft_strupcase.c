@@ -6,17 +6,20 @@
 /*   By: nachebbi <nachebbi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/30 19:00:29 by nachebbi          #+#    #+#             */
-/*   Updated: 2025/06/30 19:03:19 by nachebbi         ###   ########.fr       */
+/*   Updated: 2025/07/03 16:18:34 by nachebbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*ft_strupcase(char *str)
 {
-	while (*str)
+	int	i;
+
+	i = 0;
+	while (str[i])
 	{
-		if (str <= 97 && str >= 122)
-			str -= 20;
-		str++;
+		if (str[i] >= 97 && str[i] <= 122)
+			str[i] -= 32;
+		i++;
 	}
 	return (str);
 }
