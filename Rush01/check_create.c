@@ -6,11 +6,11 @@
 /*   By: nachebbi <nachebbi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/05 19:30:11 by nachebbi          #+#    #+#             */
-/*   Updated: 2025/07/06 15:47:48 by nachebbi         ###   ########.fr       */
+/*   Updated: 2025/07/06 16:17:24 by nachebbi         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
-#include <rush.h>
+#include "rush.h"
 
 int	ft_count_int(char *str)
 {
@@ -32,11 +32,10 @@ int	ft_simple_atoi(char str)
 {
 	if (str >= '0' && str <= '9')
 		return (str - '0');
-	else if (str == ' ')
-		return (0);
+	return (0);
 }
 
-void	*check_create(char *str, map *map, clues *clues)
+clues	*check_create(char *str, clues *clues)
 {
 	int	i;
 	int	value;
@@ -52,7 +51,7 @@ void	*check_create(char *str, map *map, clues *clues)
 	if (!(clues->north) || !(*clues->south) || !(clues->east) || !(clues->west))
 	{
 		ft_putstr("Error allocation");
-		return ;
+		return (NULL);
 	}
 	while (str[i])
 	{
@@ -71,12 +70,7 @@ void	*check_create(char *str, map *map, clues *clues)
 		}
 		i++;
 	}
-	return(*map, *clues);
-}
-
-void	init_struct(char *str, s_array map, s_clues clues)
-{
-	
+	return (clues);
 }
 
 int	check_input(char *str)

@@ -11,7 +11,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+// #include <stdio.h>
 
 int	ft_atoi(char *str)
 {
@@ -38,8 +38,8 @@ int	ft_atoi(char *str)
 	return (res * sign);
 }
 
-int	main(void)
-{
-	int res = ft_atoi("  	 -+--+--128df345433");
-	printf("nbr = %d", res);
-}
+// int	main(void)
+// {
+// 	int res = ft_atoi("  	 -+--+--128df345433");
+// 	printf("nbr = %d", res);
+// }

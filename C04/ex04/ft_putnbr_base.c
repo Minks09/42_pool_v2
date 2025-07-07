@@ -10,6 +10,24 @@
 /*                                                                            */
 /******************************************************************************/
 
+#include <unistd.h>
+
+int	ft_is_alpha(char *str)
+{
+	int	i;
+
+	i = 0;
+	while (str[i])
+	{
+		if (!((str[i] >= 'a' && str[i] <= 'z')
+				|| (str[i] >= 'A' && str[i] <= 'Z')
+				|| (str[i] >= '0' && str[i] <= '9')))
+			return (0);
+		i++;
+	}
+	return (1);
+}
+
 int	ft_strlen(char *str)
 {
 	int	i;
@@ -26,15 +44,16 @@ int	check_dup(char *base)
 	int	j;
 
 	i = 0;
-	while (*base)
+	if (ft_strlen(base) <= 1)
+		return (0);
+	while (base[i])
 	{
-		j = 0;
-		while (base [i] && base[j])
+		j = i + 1;
+		while (base [j])
 		{
-			if (base[i] != base[j])
-				j++;
-			else
+			if (base[i] == base[j])
 				return (1);
+			j++;
 		}
 		i++;
 	}
@@ -53,14 +72,26 @@ void	ft_putnbr_base(int nbr, char *base)
 
 	base_len = ft_strlen(base);
 	number = nbr;
-	if (base <= 1 || !ft_is_alpha(base) && check_dup(base) == 1)
+	if (base_len <= 1 || !ft_is_alpha(base) || check_dup(base) == 1)
 		return ;
 	if (number < 0)
 	{
 		ft_putchar('-');
 		number *= -1;
 	}
-	while (number >= ft_strlen(base))
-		ft_putnbr_base((number / ft_strlen(base)), base);
-	ft_putchar(base[nbr % ft_strlen(base)]);
+	if (nbr < base_len)
+		ft_putchar(base[nbr]);
+	else
+	{
+		ft_putnbr_base(nbr / base_len, base);
+		ft_putnbr_base(nbr % base_len, base);
+	}
+}
+
+int	main(void)
+{
+	int	nbr = -23453453;
+	char base[] = "0123456789ABCDEF";
+	ft_putnbr_base(nbr, base);
+	return (0);
 }

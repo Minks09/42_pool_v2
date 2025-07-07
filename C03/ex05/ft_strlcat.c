@@ -10,16 +10,29 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+int	ft_strlen(char *str)
+{
+	int	i;
+
+	i = 0;
+	while (str[i])
+		i++;
+	return (i);
+}
+
 unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 {
 	unsigned int	i;
 	unsigned int	j;
 
 	j = 0;
-	while (dest[i] != '\0')
-		i++;
+	i = ft_strlen(dest);
 	while (*src && i + 1 < size)
-		dest[i++] = src[j++];
+	{
+		dest[i] = src[j];
+		i++;
+		j++;
+	}
 	dest[i] = '\0';
-	return (dest[i]);
+	return (i + j);
 }
