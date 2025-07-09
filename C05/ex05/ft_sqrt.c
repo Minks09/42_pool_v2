@@ -1,26 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncpy.c                                       :+:      :+:    :+:   */
+/*   ft_sqrt.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nachebbi <nachebbi@student.42lausanne.ch>    +#+  +:+       +#+        */
+/*   By: nachebbi <nachebbi@student.42lausanne.ch>    +#+  +:+       +#+      */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/08 14:26:39 by nachebbi          #+#    #+#             */
-/*   Updated: 2025/07/08 14:26:57 by nachebbi         ###   ########.ch       */
+/*   Created: 2025/07/09 15:04:47 by nachebbi          #+#    #+#             */
+/*   Updated: 2025/07/09 15:04:57 by nachebbi         ###   ########.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strncpy(char *dest, char *src, unsigned int n)
+int	ft_sqrt(int nb)
 {
-	unsigned int	i;	
+	int	res;
 
-	i = 0;
-	while (i < n && src[i] != '\0')
+	res = 0;
+	while (res < nb)
 	{
-		dest[i] = src[i];
-		i++;
+		if (res * res == nb)
+			return (res);
+		res++;
 	}
-	while (i < n)
-		dest[i++] = '\0';
-	return (dest);
+	return (0);
 }

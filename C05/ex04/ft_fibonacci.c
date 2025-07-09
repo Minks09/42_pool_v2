@@ -1,34 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_iterative_factorial.c                           :+:      :+:    :+:   */
+/*   ft_fibonacci.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nachebbi <nachebbi@student.42lausanne.ch>    +#+  +:+       +#+      */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 04/07/2025 14:21:52 by nachebbi          #+#    #+#             */
-/*   Updated: 09/07/2025 15:06:40 by nachebbi         ###   ########.ch       */
+/*   Created: 2025/07/09 15:05:11 by nachebbi          #+#    #+#             */
+/*   Updated: 2025/07/09 15:05:11 by nachebbi         ###   ########.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_iterative_factorial(int nb)
+int	ft_fibonacci(int index)
 {
-	int	i;
-	int	res;
-
-	res = 1;
-	i = 1;
-	while (i <= nb)
-	{
-		res *= i;
-		i++;
-	}
-	return (res);
+	if (index < 0)
+		return (-1);
+	if (index == 0)
+		return (0);
+	if (index == 1)
+		return (1);
+	else
+		return (ft_fibonacci(index - 1) + ft_fibonacci(index - 2));
 }
 
 // #include <stdio.h>
-// int main() {
-//     int N = 12;
-//     int fact = ft_iterative_factorial(N);
-//     printf("Factorial of %d is %d", N, fact);
+// int main()
+// {
+//     int i = 0;
+// 	while(i <= 15){
+// 	    int fact = ft_fibonacci(i);
+//     	printf("fibo of %d is %d\n", i, fact);
+// 		i++;
+// 	}
 //     return 0;
 // }

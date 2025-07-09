@@ -1,34 +1,46 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_iterative_factorial.c                           :+:      :+:    :+:   */
+/*   ft_is_prime.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nachebbi <nachebbi@student.42lausanne.ch>    +#+  +:+       +#+      */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 04/07/2025 14:21:52 by nachebbi          #+#    #+#             */
-/*   Updated: 09/07/2025 15:06:40 by nachebbi         ###   ########.ch       */
+/*   Created: 2025/07/09 15:04:24 by nachebbi          #+#    #+#             */
+/*   Updated: 2025/07/09 15:04:30 by nachebbi         ###   ########.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_iterative_factorial(int nb)
+int	ft_is_prime(int nb)
 {
 	int	i;
-	int	res;
 
-	res = 1;
-	i = 1;
-	while (i <= nb)
+	i = 2;
+	if (nb <= 1)
+		return (0);
+	if (nb == 2 || nb == 3)
+		return (1);
+	else
 	{
-		res *= i;
-		i++;
+		while (i < nb)
+		{
+			if (nb % i == 0)
+				return (0);
+			else
+				i++;
+		}
 	}
-	return (res);
+	return (1);
 }
 
 // #include <stdio.h>
-// int main() {
-//     int N = 12;
-//     int fact = ft_iterative_factorial(N);
-//     printf("Factorial of %d is %d", N, fact);
+// int main()
+// {
+// 	int i = 0;
+// 	while(i <= 211){
+// 		int fact = ft_is_prime(i);
+// 		if (fact != 0)
+// 			printf("%d of %d \n", i, fact);
+// 		i++;
+// 	}
 //     return 0;
 // }
