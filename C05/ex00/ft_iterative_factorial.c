@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_iterative_factorial.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nachebbi <nachebbi@student.42lausanne.ch>    +#+  +:+       +#+      */
+/*   By: nachebbi <nachebbi@student.42lausanne.ch>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 04/07/2025 14:21:52 by nachebbi          #+#    #+#             */
-/*   Updated: 09/07/2025 15:06:40 by nachebbi         ###   ########.ch       */
+/*   Created: 2025/07/10 19:26:02 by nachebbi          #+#    #+#             */
+/*   Updated: 2025/07/10 19:26:02 by nachebbi         ###   ########.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ int	ft_iterative_factorial(int nb)
 
 	res = 1;
 	i = 1;
+	if (nb < 0)
+		return (0);
 	while (i <= nb)
 	{
 		res *= i;

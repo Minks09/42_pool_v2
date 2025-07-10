@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_recursive_factorial.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nachebbi <nachebbi@student.42lausanne.ch>    +#+  +:+       +#+      */
+/*   By: nachebbi <nachebbi@student.42lausanne.ch>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 07/07/2025 22:47:35 by nachebbi          #+#    #+#             */
-/*   Updated: 07/07/2025 22:52:21 by nachebbi         ###   ########.ch       */
+/*   Created: 2025/07/10 19:26:09 by nachebbi          #+#    #+#             */
+/*   Updated: 2025/07/10 19:26:09 by nachebbi         ###   ########.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@ int	ft_recursive_factorial(int nb)
 {
 	if (nb == 0)
 		return (1);
+	if (nb < 0)
+		return (0);
 	else
 		return (nb * ft_recursive_factorial(nb - 1));
 }

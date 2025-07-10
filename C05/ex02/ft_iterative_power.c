@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_iterative_power.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nachebbi <nachebbi@student.42lausanne.ch>    +#+  +:+       +#+      */
+/*   By: nachebbi <nachebbi@student.42lausanne.ch>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/09 15:06:16 by nachebbi          #+#    #+#             */
-/*   Updated: 2025/07/09 15:06:27 by nachebbi         ###   ########.ch       */
+/*   Created: 2025/07/10 19:26:14 by nachebbi          #+#    #+#             */
+/*   Updated: 2025/07/10 19:26:14 by nachebbi         ###   ########.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@ int	ft_iterative_power(int nb, int power)
 	int	res;
 
 	res = 1;
+	if (power < 0)
+		return (0);
 	while (power >= 1)
 	{
 		res *= nb;

@@ -3,17 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   ft_recursive_power.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nachebbi <nachebbi@student.42lausanne.ch>    +#+  +:+       +#+      */
+/*   By: nachebbi <nachebbi@student.42lausanne.ch>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/09 15:05:31 by nachebbi          #+#    #+#             */
-/*   Updated: 2025/07/09 15:06:01 by nachebbi         ###   ########.ch       */
+/*   Created: 2025/07/10 19:26:20 by nachebbi          #+#    #+#             */
+/*   Updated: 2025/07/10 19:26:20 by nachebbi         ###   ########.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_recursive_power(int nb, int power)
 {
-	if (nb == 0)
+	if (nb == 0 || power == 0)
 		return (1);
+	if (power < 0)
+		return (0);
 	else
 		return (nb * ft_recursive_power(nb, power - 1));
 }
