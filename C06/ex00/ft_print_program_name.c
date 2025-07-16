@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: nachebbi <nachebbi@student.42lausanne.ch>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/09 15:10:36 by nachebbi          #+#    #+#             */
-/*   Updated: 2025/07/09 15:17:02 by nachebbi         ###   ########.ch       */
+/*   Created: 2025/07/16 12:57:05 by nachebbi          #+#    #+#             */
+/*   Updated: 2025/07/16 13:01:57 by nachebbi         ###   ########.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,11 @@ int	main(int ac, char **av)
 	i = 0;
 	if (ac != 0)
 	{
-		while (av[0][i++])
+		while (av[0][i])
+		{
 			write(1, &av[0][i], 1);
+			i++;
+		}
 		write(1, "\n", 1);
 	}
 	return (0);

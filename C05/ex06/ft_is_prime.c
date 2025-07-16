@@ -6,7 +6,7 @@
 /*   By: nachebbi <nachebbi@student.42lausanne.ch>    +#+  +:+       +#+      */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/09 15:04:24 by nachebbi          #+#    #+#             */
-/*   Updated: 2025/07/09 15:04:30 by nachebbi         ###   ########.ch       */
+/*   Updated: 2025/07/13 23:58:52 by nachebbi         ###   ########.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,15 +32,14 @@ int	ft_is_prime(int nb)
 	return (1);
 }
 
-// #include <stdio.h>
-// int main()
-// {
-// 	int i = 0;
-// 	while(i <= 211){
-// 		int fact = ft_is_prime(i);
-// 		if (fact != 0)
-// 			printf("%d of %d \n", i, fact);
-// 		i++;
-// 	}
-//     return 0;
-// }
+#include <stdio.h>
+int main()
+{
+	int i = 0;
+	while(i <= 211){
+		int fact = ft_is_prime(i);
+		printf("%d of %d \n", i, fact);
+		i++;
+	}
+    return 0;
+}

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_find_next_prime.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nachebbi <nachebbi@student.42lausanne.ch>  +#+  +:+       +#+        */
+/*   By: nachebbi <nachebbi@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/10 19:26:41 by nachebbi          #+#    #+#             */
-/*   Updated: 2025/07/10 19:26:41 by nachebbi         ###   ########.ch       */
+/*   Created: 2025/07/13 23:31:40 by nachebbi          #+#    #+#             */
+/*   Updated: 2025/07/13 23:32:34 by nachebbi         ###   ########.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,9 +38,10 @@ int	ft_find_next_prime(int nb)
 }
 
 // #include <stdio.h>
+// #include <limits.h>
 // int main()
 // {
-// 	int i = 10;
+// 	int i = INTMAX;
 // 	int fact = ft_find_next_prime(i);
 // 	printf("next prime of %d is %d \n", i, fact);
 // 	return 0;

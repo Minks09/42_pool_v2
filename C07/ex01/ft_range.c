@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: nachebbi <nachebbi@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/10 16:24:40 by nachebbi          #+#    #+#             */
-/*   Updated: 2025/07/10 16:24:40 by nachebbi         ###   ########.ch       */
+/*   Created: 2025/07/14 17:14:26 by nachebbi          #+#    #+#             */
+/*   Updated: 2025/07/14 17:20:29 by nachebbi         ###   ########.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,19 +14,20 @@
 
 int	*ft_range(int min, int max)
 {
-	int	range;
 	int	*res;
-	int	i;
 
-	i = 0;
-	range = max - min;
-	if (range <= 0)
-		return (NULL);
-	else
+	if (min >= max)
 	{
-		res = malloc(sizeof (int) * range);
-		while (i++ < max)
-			res[i] = min + i;
+		res = NULL;
+		return (res);
+	}
+	res = malloc(sizeof (int) * (max - min));
+	if (!(res))
+		return (NULL);
+	while (max >= min)
+	{
+		res[max - min - 1] = max - 1;
+		max--;
 	}
 	return (res);
 }
