@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nachebbi <nachebbi@student.42lausanne.ch>    +#+  +:+       +#+        */
+/*   By: nachebbi <nachebbi@student.42lausanne.ch>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/10 16:26:45 by nachebbi          #+#    #+#             */
-/*   Updated: 2025/07/10 16:32:46 by nachebbi         ###   ########.ch       */
+/*   Created: 2025/07/17 22:29:15 by nachebbi          #+#    #+#             */
+/*   Updated: 2025/07/17 22:29:15 by nachebbi         ###   ########.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 

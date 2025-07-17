@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: nachebbi <nachebbi@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/13 23:31:40 by nachebbi          #+#    #+#             */
-/*   Updated: 2025/07/13 23:32:34 by nachebbi         ###   ########.ch       */
+/*   Created: 2025/07/17 14:10:30 by nachebbi          #+#    #+#             */
+/*   Updated: 2025/07/17 22:06:19 by nachebbi         ###   ########.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,12 +37,12 @@ int	ft_find_next_prime(int nb)
 	}
 }
 
-// #include <stdio.h>
-// #include <limits.h>
-// int main()
-// {
-// 	int i = INTMAX;
-// 	int fact = ft_find_next_prime(i);
-// 	printf("next prime of %d is %d \n", i, fact);
-// 	return 0;
-// }
+#include <stdio.h>
+#include <limits.h>
+int main()
+{
+	int i = 3;
+	int fact = ft_find_next_prime(i);
+	printf("next prime of %d is %d \n", i, fact);
+	return 0;
+}
